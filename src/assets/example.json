@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Merve",
+      "lastName": "Altun",
+      "profilePicture": "src/assets/images/333db814aa02093c1d7287796c88ff58@2x.png"
+    },
+    {
+      "id": "2",
+      "firstName": "Tuğçe",
+      "lastName": "Tunali",
+      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+    },
+    {
+      "id": "3",
+      "firstName": "Soner",
+      "lastName": "Saygili",
+      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+    },
+    {
+      "id": "4",
+      "firstName": "Ezgi",
+      "lastName": "Sevinç",
+      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+    },
+    {
+      "id": "5",
+      "firstName": "Sude",
+      "lastName": "Sezgi",
+      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+    },
+    {
+      "id": "6",
+      "firstName": "Pınar",
+      "lastName": "Gun",
+      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+    },
+    {
+      "id": "7",
+      "firstName": "Onur",
+      "lastName": "Topaloğlu",
+      "profilePicture": "../../assets/images/profilePhotos/onur.png"
+    }
+  ],
+  "topics": [
+    {
+      "id": "1",
+      "title": "Shang-Chi’ Stays On Record Pace With Nearly $35.8 Million In Second Weekend",
+      "like": 3250,
+      "dislike": 2250,
+      "comment": 5414,
+      "date": "19.07.2022",
+      "ownerId": "7",
+      "details": {
+        "body": "topic 1 details body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit, sed do eiusmod tempor consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetu adipisc sit ameth...",
+        "picture": "./images/indir.jpeg",
+        "replies": [],
+        "comments": [
+          {
+            "ownerId": "6",
+            "body": "comment body 1 for topic 1",
+            "past": "3d",
+            "like": 2251,
+            "dislike": 2250,
+            "replies": []
+          },
+          {
+            "ownerId": "5",
+            "body": "comment body 2 for topic 1",
+            "past": "6h",
+            "like": 2250,
+            "dislike": 2250,
+            "replies": [
+              {
+                "past": "3h",
+                "ownerId": "4",
+                "body": "reply body 1 for comment 2",
+                "picture": "./images/car.jpeg",
+                "like": 2250,
+                "dislike": 2250
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "title": "Daniel Craig: post your questions for the actor ahead of his final Bond film",
+      "like": 2050,
+      "dislike": 1350,
+      "comment": 2253,
+      "date": "18.07.2022",
+      "ownerId": "6",
+      "details": {
+        "body": "topic 2 details body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit, sed do eiusmod tempor consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetu adipisc sit ameth...",
+        "picture": "./images/indir.jpeg",
+        "replies": [],
+        "comments": [
+          {
+            "ownerId": "5",
+            "body": "comment body 1 for topic 2",
+            "past": "3d",
+            "like": 2251,
+            "dislike": 2250,
+            "replies": []
+          },
+          {
+            "ownerId": "4",
+            "body": "comment body 2 for topic 2",
+            "past": "6h",
+            "like": 2250,
+            "dislike": 2250,
+            "replies": [
+              {
+                "past": "3h",
+                "ownerId": "3",
+                "body": "reply body 1 for comment 2",
+                "picture": "./images/car.jpeg",
+                "like": 2250,
+                "dislike": 2250
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
