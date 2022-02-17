@@ -1,0 +1,12 @@
+#left-side {
+  background-color: #f5f5f5;
+}
+#right-side {
+  background-color: #f5f5f5;
+}
+a {
+  cursor: pointer;
+}
+.borderr {
+  border: 1px solid #03b425;
+}

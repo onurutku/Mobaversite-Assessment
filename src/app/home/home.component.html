@@ -1,1 +1,20 @@
-<p>home works!</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="container-fluid d-flex flex-row">
+      <div id="left-side" class="col-md-4 d-flex flex-row">
+        <div class="col-md-6 text-center">
+          <div class="p-2"><a (click)="popular()">Popular</a></div>
+
+          <div *ngIf="popularClicked" class="borderr"></div>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <div class="p-2"><a (click)="recent()">Recent</a></div>
+          <div *ngIf="recentClicked" class="borderr"></div>
+        </div>
+      </div>
+      <div id="middle-side" class="col-md-4">Mid</div>
+      <div id="right-side" class="col-md-4">Right</div>
+    </div>
+  </div>
+</div>
