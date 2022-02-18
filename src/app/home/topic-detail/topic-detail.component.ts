@@ -14,6 +14,8 @@ export class TopicDetailComponent implements OnInit, OnDestroy {
   topic: any;
   topicOwner: any;
   openReply: string = null;
+  showHideId: string = null;
+  showHideCommentId: string = null;
   constructor(private route: ActivatedRoute, private home: HomeService) {}
 
   ngOnInit(): void {
@@ -34,6 +36,20 @@ export class TopicDetailComponent implements OnInit, OnDestroy {
       this.openReply = id;
     } else {
       this.openReply = null;
+    }
+  }
+  showHide(id: string) {
+    if (this.showHideId == null || this.showHideId != id) {
+      this.showHideId = id;
+    } else {
+      this.showHideId = null;
+    }
+  }
+  showHideComment(id: string) {
+    if (this.showHideCommentId == null || this.showHideCommentId != id) {
+      this.showHideCommentId = id;
+    } else {
+      this.showHideCommentId = null;
     }
   }
 }

@@ -61,7 +61,7 @@
       "createTime": "09:45",
       "ownerId": "7",
       "details": {
-        "body": "topic 1 details body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit, sed do eiusmod tempor consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetu adipisc sit ameth...",
+        "body": "topic 1 details body less then 150 char to test more button",
         "picture": "../../../assets/images/share1.jpg",
         "replies": [],
         "like": "1000",
@@ -70,7 +70,7 @@
           {
             "id": "c1",
             "ownerId": "6",
-            "body": "comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1",
+            "body": "comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1 comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,",
             "past": "3d",
             "like": 2251,
             "dislike": 2250,

@@ -21,12 +21,20 @@
     <div class="row">
       <div class="col-2"></div>
       <div class="col-9 p-0">
-        <p>{{ topic.details.body }}</p>
+        <p>
+          {{
+            topic.details.body.length > 150 && showHideId != topic.id
+              ? (topic.details.body | slice: 0:150) + "..."
+              : topic.details.body
+          }}
+        </p>
       </div>
       <div class="col-1 p-0"></div>
     </div>
-    <div class="row text-end pe-3 pb-1">
-      <a class="more">More...</a>
+    <div *ngIf="topic.details.body.length > 150" class="row text-end pe-3 pb-3">
+      <a (click)="showHide(topic.id)" class="more">{{
+        showHideId == topic.id ? "Less..." : "More..."
+      }}</a>
     </div>
     <div *ngIf="topic.details.picture != null" class="row">
       <div class="col-2"></div>
@@ -83,12 +91,20 @@
     <div class="row">
       <div class="col-2"></div>
       <div class="col-9 p-0">
-        <p>{{ comment.body }}</p>
+        <p>
+          {{
+            comment.body.length > 150 && showHideCommentId != comment.id
+              ? (comment.body | slice: 0:150) + "..."
+              : comment.body
+          }}
+        </p>
       </div>
       <div class="col-1 p-0"></div>
     </div>
     <div *ngIf="comment.body.length > 150" class="row text-end pe-3 pb-1">
-      <a class="more">More...</a>
+      <a (click)="showHideComment(comment.id)" class="more">{{
+        showHideCommentId == comment.id ? "Less..." : "More..."
+      }}</a>
     </div>
     <div *ngIf="comment.picture != null" class="row">
       <div class="col-2"></div>
