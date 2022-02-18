@@ -52,3 +52,6 @@ p {
 .replies {
   color: #03b425;
 }
+.arrows {
+  border: none;
+}

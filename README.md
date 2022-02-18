@@ -1,5 +1,7 @@
 # MobaversiteAssessment
 
+https://imdb-clone-out.netlify.app/
+
 ## installation
 
 install angular CLI (run npm install -g @angular/cli)
