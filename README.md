@@ -41,3 +41,9 @@ YANIT:Component Based kodladım.
 
 9-Projenin bir demosunu Vercel veya Netlify gibi bir Front-end hosting servisinde deploy ediniz.
 YANIT:Proje h1 başlığının altındaki linkte deploy edildi.
+
+# GENEL
+
+Genel olarak benim için eğlenceli ve öğretici bir assesment oldu.
+Elimden geleni yapmaya çalıştım.Bu deneyim için teşekkür ederim.
+İyi çalışmalar.
