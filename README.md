@@ -3,8 +3,8 @@
 ## installation
 
 install angular CLI (run npm install -g @angular/cli)
-run nmp install
-ng serve
+(run nmp install)
+(run ng serve)
 
 ## Development server
 
