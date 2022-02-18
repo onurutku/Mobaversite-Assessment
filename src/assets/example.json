@@ -4,43 +4,50 @@
       "id": "1",
       "firstName": "Merve",
       "lastName": "Altun",
-      "profilePicture": "src/assets/images/333db814aa02093c1d7287796c88ff58@2x.png"
+      "profilePicture": "../../assets/images/profilePhotos/woman1.png",
+      "entries": 434
     },
     {
       "id": "2",
       "firstName": "Tuğçe",
       "lastName": "Tunali",
-      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+      "profilePicture": "../../assets/images/profilePhotos/woman2.jpeg",
+      "entries": 500
     },
     {
       "id": "3",
       "firstName": "Soner",
       "lastName": "Saygili",
-      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+      "profilePicture": "../../assets/images/profilePhotos/man2.jpg",
+      "entries": 350
     },
     {
       "id": "4",
       "firstName": "Ezgi",
       "lastName": "Sevinç",
-      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+      "profilePicture": "../../assets/images/profilePhotos/woman3.jpg",
+      "entries": 370
     },
     {
       "id": "5",
       "firstName": "Sude",
       "lastName": "Sezgi",
-      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+      "profilePicture": "../../assets/images/profilePhotos/woman4.jpg",
+      "entries": 440
     },
     {
       "id": "6",
       "firstName": "Pınar",
       "lastName": "Gun",
-      "profilePicture": "./images/333db814aa02093c1d7287796c88ff58@2x.png"
+      "profilePicture": "../../assets/images/profilePhotos/woman5.jpg",
+      "entries": 445
     },
     {
       "id": "7",
       "firstName": "Onur",
       "lastName": "Topaloğlu",
-      "profilePicture": "../../assets/images/profilePhotos/onur.png"
+      "profilePicture": "../../assets/images/profilePhotos/onur.png",
+      "entries": 700
     }
   ],
   "topics": [

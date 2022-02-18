@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 header">Popular Users</div>
+  </div>
+  <div *ngFor="let user of usersDataToChild" class="row border-bottom info">
+    <div class="col-md-12">
+      <a class="row">
+        <div class="col-md-2">
+          <img
+            [src]="
+              user.profilePicture ||
+              '../../../assets/images/profilePhotos/default.png'
+            "
+            alt=""
+          />
+        </div>
+        <div class="col-md-10 d-flex flex-column">
+          <span>{{ user.firstName }} {{ user.lastName }}</span>
+          <small>{{ user.entries }} entry</small>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

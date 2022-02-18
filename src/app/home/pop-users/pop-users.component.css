@@ -1,0 +1,26 @@
+.header {
+  background-color: #16232c;
+  color: #ffffff;
+  padding: 12px;
+}
+img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.info {
+  padding: 18px;
+  background-color: #ffffff;
+}
+small {
+  color: #9b9b9b;
+  font-size: 10px;
+}
+span {
+  font-size: 14px;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}

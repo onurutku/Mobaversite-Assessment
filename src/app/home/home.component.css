@@ -1,7 +1,4 @@
-#left-side {
-  background-color: #f5f5f5;
-}
-#right-side {
+.greyside {
   background-color: #f5f5f5;
 }
 a {
@@ -9,4 +6,10 @@ a {
 }
 .borderr {
   border: 1px solid #03b425;
+}
+app-pop-users {
+  background-color: #f5f5f5;
+}
+.pad {
+  padding: 12px;
 }
