@@ -9,7 +9,7 @@
       </div>
       <div class="col-9 p-0">
         <a class="username">{{ topicOwner.firstName }}</a>
-        <span>&bull;{{ topic.date }}&bull;</span>
+        <span> &bull; {{ topic.date }} &bull; </span>
         <span>{{ topic.createTime }}</span>
       </div>
       <div class="col-1">
@@ -80,7 +80,7 @@
         <a class="username">{{
           getCommentOwnerInfo(comment.ownerId).firstName
         }}</a>
-        <span>&bull;{{ comment.past }}&bull;</span>
+        <span> &bull; {{ comment.past }} </span>
       </div>
       <div class="col-1">
         <a class="burger"
@@ -155,7 +155,7 @@
             <a class="username ps-2">{{
               getCommentOwnerInfo(reply.ownerId).firstName
             }}</a>
-            <span>&bull;{{ reply.past }}&bull;</span>
+            <span> &bull; {{ reply.past }} </span>
           </div>
           <div class="col-1">
             <a><img src="../../assets/icons/ellipsis-h.svg" alt="" /></a>
