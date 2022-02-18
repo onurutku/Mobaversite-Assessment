@@ -4,7 +4,7 @@
   </div>
   <div *ngFor="let user of usersDataToChild" class="row border-bottom info">
     <div class="col-md-12">
-      <a class="row">
+      <a [routerLink]="['']" class="row">
         <div class="col-md-2">
           <img
             [src]="

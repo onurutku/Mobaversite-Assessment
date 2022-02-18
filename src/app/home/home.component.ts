@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.topicsData = this.home.getTopicsData();
+    console.log(this.topicsData);
     this.usersData = this.home.getUsersData();
   }
   popular() {
@@ -57,5 +58,10 @@ export class HomeComponent implements OnInit {
   recent() {
     this.recentClicked = true;
     this.popularClicked = false;
+    this.topicsData.sort((a, b) => {
+      if (a.date > b.date) return -1;
+      if (a.date < b.date) return 1;
+      return 0;
+    });
   }
 }

@@ -1,0 +1,45 @@
+.burger {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.rel {
+  position: relative;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.pp {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.username {
+  font-size: 14px;
+  color: #0464d3;
+  text-decoration: none;
+}
+span {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+p {
+  font-size: 14px;
+}
+.more {
+  font-size: 11px;
+  color: #03b425;
+}
+.shared-image {
+  max-width: 100%;
+  border-radius: 13px;
+}
+.reply {
+  color: #aaaaaa;
+  font-size: 12px;
+  text-decoration: none;
+}
+.info {
+  background-color: white;
+}

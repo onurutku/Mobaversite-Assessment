@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-xxl navbar-light">
   <div class="container-fluid">
     <div class="brand">
-      <a class="navbar-brand" href="#"
+      <a [routerLink]="'/'" class="navbar-brand"
         ><img src="../../assets/images/Group 368.svg" alt="logo"
       /></a>
     </div>
@@ -14,9 +14,14 @@
             alt="search"
           />
         </button>
-        <input type="text" id="search" [formControlName]="'search'" />
+        <input
+          placeholder="check console.log after submit"
+          type="text"
+          id="search"
+          [formControlName]="'search'"
+        />
       </form>
-      <a href="#"
+      <a
         ><img
           class="profile"
           [src]="

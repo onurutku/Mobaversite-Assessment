@@ -2,20 +2,68 @@
   <div class="row">
     <div class="col-md-8">
       <div class="row">
-        <div class="col-md-6 greyside">
-          <div class="row">
-            <div class="text-center col-md-6">
-              <div class="pad"><a (click)="popular()">Popular</a></div>
-              <div *ngIf="popularClicked" class="borderr"></div>
+        <div class="col-md-6 greyside p-0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="text-center col-md-6">
+                <div class="pad"><a (click)="popular()">Popular</a></div>
+                <div *ngIf="popularClicked" class="borderr"></div>
+              </div>
+              <div class="text-center col-md-6">
+                <div class="pad"><a (click)="recent()">Recent</a></div>
+                <div *ngIf="recentClicked" class="borderr"></div>
+              </div>
             </div>
-            <div class="text-center col-md-6">
-              <div class="pad"><a (click)="recent()">Recent</a></div>
-              <div *ngIf="recentClicked" class="borderr"></div>
+          </div>
+          <div *ngFor="let topics of topicsData" class="container-fluid mb-2">
+            <div class="row info m-0">
+              <div class="col-md-12 rel">
+                <a
+                  [routerLink]="['details', topics.id]"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                >
+                  <p>
+                    {{ topics.title }}
+                  </p>
+                </a>
+                <a class="burger"
+                  ><img src="../../assets/icons/ellipsis-h.svg" alt=""
+                /></a>
+              </div>
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-9">
+                    <a class="pe-3"
+                      ><img
+                        src="../../assets/icons/arrow-alt-down.svg"
+                        alt=""
+                      />
+                      <span class="ms-1">{{ topics.dislike }}</span></a
+                    >
+                    <a class="pe-3"
+                      ><img src="../../assets/icons/arrow-alt-up.svg" alt="" />
+                      <span class="ms-1">{{ topics.like }}</span></a
+                    >
+                    <a class="pe-3"
+                      ><img
+                        src="../../assets/icons/comment-alt-dots.svg"
+                        alt=""
+                      />
+                      <span class="ms-1">{{ topics.comment }}</span></a
+                    >
+                  </div>
+                  <div class="col-md-3 text-end">
+                    <span class="ms-1">{{ topics.date }}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <app-topic-detail></app-topic-detail>
+
+        <div class="col-md-6 p-0">
+          <router-outlet></router-outlet>
         </div>
       </div>
     </div>

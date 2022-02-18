@@ -7,6 +7,8 @@ import example from '../../assets/example.json';
 export class HomeService {
   topicsData = [];
   usersData = [];
+  topicById = {};
+  topicOwner = {};
   constructor() {}
 
   getTopicsData() {
@@ -20,5 +22,21 @@ export class HomeService {
       this.usersData.push(element);
     });
     return this.usersData;
+  }
+  getTopicsDataById(id: string) {
+    example.topics.map((element) => {
+      if (element.id === id) {
+        this.topicById = element;
+      }
+    });
+    return this.topicById;
+  }
+  getTopicOwnerById(id: string) {
+    example.users.map((element) => {
+      if (element.id === id) {
+        this.topicOwner = element;
+      }
+    });
+    return this.topicOwner;
   }
 }

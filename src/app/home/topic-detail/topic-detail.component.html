@@ -1,1 +1,110 @@
-<p>topic-detail works!</p>
+<!-- details -->
+<div class="row info m-0 mb-2 p-3">
+  <div class="col-md-12 rel p-0">
+    <div class="row">
+      <div class="col-2">
+        <a>
+          <img class="pp" [src]="topicOwner.profilePicture" alt="" />
+        </a>
+      </div>
+      <div class="col-9 p-0">
+        <a class="username">{{ topicOwner.firstName }}</a>
+        <span>&bull;{{ topic.date }}&bull;</span>
+        <span>{{ topic.createTime }}</span>
+      </div>
+      <div class="col-1">
+        <a class="burger"
+          ><img src="../../assets/icons/ellipsis-h.svg" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-9 p-0">
+        <p>{{ topic.details.body }}</p>
+      </div>
+      <div class="col-1 p-0"></div>
+    </div>
+    <div class="row text-end pe-3 pb-1">
+      <a class="more">More...</a>
+    </div>
+    <div *ngIf="topic.details.picture != null" class="row">
+      <div class="col-2"></div>
+      <div class="col-8 p-0">
+        <img class="shared-image" [src]="topic.details.picture" alt="" />
+      </div>
+      <div class="col-1 p-0"></div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8 p-0">
+        <a class="reply pe-3"><span>Reply</span></a>
+        <a class="pe-3"
+          ><img src="../../assets/icons/arrow-alt-down.svg" alt="" />
+          <span class="ms-1">{{ topic.details.dislike }}</span></a
+        >
+        <a class="pe-3"
+          ><img src="../../assets/icons/arrow-alt-up.svg" alt="" />
+          <span class="ms-1">{{ topic.details.like }}</span></a
+        >
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+</div>
+<!-- comments -->
+<div
+  *ngFor="let comment of topic.details.comments"
+  class="row info m-0 mb-2 p-2"
+>
+  <div class="col-md-12 rel p-0">
+    <div class="row">
+      <div class="col-2">
+        <a>
+          <img class="pp" [src]="topicOwner.profilePicture" alt="" />
+        </a>
+      </div>
+      <div class="col-9 p-0">
+        <a class="username">{{ topicOwner.firstName }}</a>
+        <span>&bull;{{ comment.past }}&bull;</span>
+      </div>
+      <div class="col-1">
+        <a class="burger"
+          ><img src="../../assets/icons/ellipsis-h.svg" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-9 p-0">
+        <p>{{ comment.body }}</p>
+      </div>
+      <div class="col-1 p-0"></div>
+    </div>
+    <div *ngIf="comment.body.length > 150" class="row text-end pe-3 pb-1">
+      <a class="more">More...</a>
+    </div>
+    <div *ngIf="comment.picture != null" class="row">
+      <div class="col-2"></div>
+      <div class="col-8 p-0">
+        <img class="shared-image" [src]="comment.picture" alt="" />
+      </div>
+      <div class="col-1 p-0"></div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8 p-0">
+        <a class="reply pe-3"><span>Reply</span></a>
+        <a class="pe-3"
+          ><img src="../../assets/icons/arrow-alt-down.svg" alt="" />
+          <span class="ms-1">{{ comment.dislike }}</span></a
+        >
+        <a class="pe-3"
+          ><img src="../../assets/icons/arrow-alt-up.svg" alt="" />
+          <span class="ms-1">{{ comment.like }}</span></a
+        >
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+</div>

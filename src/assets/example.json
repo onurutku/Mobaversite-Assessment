@@ -58,31 +58,36 @@
       "dislike": 2250,
       "comment": 5414,
       "date": "19.07.2022",
+      "createTime": "09:45",
       "ownerId": "7",
       "details": {
         "body": "topic 1 details body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit, sed do eiusmod tempor consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetu adipisc sit ameth...",
-        "picture": "./images/indir.jpeg",
+        "picture": "../../../assets/images/share1.jpg",
         "replies": [],
+        "like": "1000",
+        "dislike": "5000",
         "comments": [
           {
             "ownerId": "6",
-            "body": "comment body 1 for topic 1",
+            "body": "comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1",
             "past": "3d",
             "like": 2251,
             "dislike": 2250,
-            "replies": []
+            "replies": [],
+            "picture": "../../../assets/images/comment1.jpg"
           },
           {
             "ownerId": "5",
-            "body": "comment body 2 for topic 1",
+            "body": "comment body 2 for topic 1,comment body 2 for topic 1,comment body 2 for topic 1,comment body 2 for topic 1",
             "past": "6h",
             "like": 2250,
             "dislike": 2250,
+            "picture": "../../../assets/images/comment2.jpg",
             "replies": [
               {
                 "past": "3h",
                 "ownerId": "4",
-                "body": "reply body 1 for comment 2",
+                "body": "reply body 1 for comment 2,reply body 1 for comment 2,reply body 1 for comment 2,reply body 1 for comment 2",
                 "picture": "./images/car.jpeg",
                 "like": 2250,
                 "dislike": 2250
@@ -99,11 +104,14 @@
       "dislike": 1350,
       "comment": 2253,
       "date": "18.07.2022",
+      "createTime": "19:45",
       "ownerId": "6",
       "details": {
         "body": "topic 2 details body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit, sed do eiusmod tempor consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetu adipisc sit ameth...",
-        "picture": "./images/indir.jpeg",
+        "picture": "../../../assets/images/share2.jpg",
         "replies": [],
+        "like": "1250",
+        "dislike": "2650",
         "comments": [
           {
             "ownerId": "5",

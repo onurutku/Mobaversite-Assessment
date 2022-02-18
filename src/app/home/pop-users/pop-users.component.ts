@@ -8,7 +8,5 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PopUsersComponent implements OnInit {
   constructor() {}
   @Input() usersDataToChild: any;
-  ngOnInit(): void {
-    console.log(this.usersDataToChild);
-  }
+  ngOnInit(): void {}
 }

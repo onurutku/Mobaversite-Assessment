@@ -1,8 +1,14 @@
+.info {
+  padding: 18px;
+  background-color: #ffffff;
+}
 .greyside {
   background-color: #f5f5f5;
 }
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 .borderr {
   border: 1px solid #03b425;
@@ -12,4 +18,19 @@ app-pop-users {
 }
 .pad {
   padding: 12px;
+}
+p {
+  font-size: 14px;
+}
+.burger {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.rel {
+  position: relative;
+}
+span {
+  font-size: 12px;
+  color: #aaaaaa;
 }
