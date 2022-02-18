@@ -61,11 +61,17 @@
     <div class="row">
       <div class="col-2">
         <a>
-          <img class="pp" [src]="topicOwner.profilePicture" alt="" />
+          <img
+            class="pp"
+            [src]="getCommentOwnerInfo(comment.ownerId).profilePicture"
+            alt=""
+          />
         </a>
       </div>
       <div class="col-9 p-0">
-        <a class="username">{{ topicOwner.firstName }}</a>
+        <a class="username">{{
+          getCommentOwnerInfo(comment.ownerId).firstName
+        }}</a>
         <span>&bull;{{ comment.past }}&bull;</span>
       </div>
       <div class="col-1">
@@ -104,7 +110,74 @@
           <span class="ms-1">{{ comment.like }}</span></a
         >
       </div>
+      <div class="col-1"></div>
+    </div>
+    <div *ngIf="comment.replies != ''" class="row">
       <div class="col-2"></div>
+      <div class="col-8 p-0">
+        <a (click)="openReplies(comment.id)"
+          ><img src="../../../assets/icons/reply.svg" alt=""
+        /></a>
+        <span class="replies ms-1"
+          >{{ comment.replies.length }} (toggle button it works)</span
+        >
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div *ngIf="openReply === comment.id">
+      <div *ngFor="let reply of comment.replies">
+        <div *ngIf="comment.replies != ''" class="row pb-2">
+          <div class="col-2"></div>
+          <div class="col-9 p-0">
+            <a>
+              <img
+                class="pp-reply"
+                [src]="getCommentOwnerInfo(reply.ownerId).profilePicture"
+                alt=""
+              />
+            </a>
+            <a class="username ps-2">{{
+              getCommentOwnerInfo(reply.ownerId).firstName
+            }}</a>
+            <span>&bull;{{ reply.past }}&bull;</span>
+          </div>
+          <div class="col-1">
+            <a><img src="../../assets/icons/ellipsis-h.svg" alt="" /></a>
+          </div>
+        </div>
+        <div *ngIf="comment.replies != ''" class="row">
+          <div class="col-2"></div>
+          <div class="col-9 p-0">
+            <p>{{ reply.body }}</p>
+          </div>
+          <div class="col-1 p-0"></div>
+        </div>
+        <div *ngIf="reply.body.length > 150" class="row text-end pe-3 pb-1">
+          <a class="more">More...</a>
+        </div>
+        <div *ngIf="reply.picture != ''" class="row">
+          <div class="col-2"></div>
+          <div class="col-8 p-0">
+            <img class="shared-image" [src]="reply.picture" alt="" />
+          </div>
+          <div class="col-1 p-0"></div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8 p-0">
+            <a class="reply pe-3"><span>Reply</span></a>
+            <a class="pe-3"
+              ><img src="../../assets/icons/arrow-alt-down.svg" alt="" />
+              <span class="ms-1">{{ reply.dislike }}</span></a
+            >
+            <a class="pe-3"
+              ><img src="../../assets/icons/arrow-alt-up.svg" alt="" />
+              <span class="ms-1">{{ reply.like }}</span></a
+            >
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

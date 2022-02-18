@@ -68,6 +68,7 @@
         "dislike": "5000",
         "comments": [
           {
+            "id": "c1",
             "ownerId": "6",
             "body": "comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1,comment body 1 for topic 1",
             "past": "3d",
@@ -77,6 +78,7 @@
             "picture": "../../../assets/images/comment1.jpg"
           },
           {
+            "id": "c2",
             "ownerId": "5",
             "body": "comment body 2 for topic 1,comment body 2 for topic 1,comment body 2 for topic 1,comment body 2 for topic 1",
             "past": "6h",
@@ -88,9 +90,17 @@
                 "past": "3h",
                 "ownerId": "4",
                 "body": "reply body 1 for comment 2,reply body 1 for comment 2,reply body 1 for comment 2,reply body 1 for comment 2",
-                "picture": "./images/car.jpeg",
+                "picture": "../../../assets/images/reply3.jpg",
                 "like": 2250,
                 "dislike": 2250
+              },
+              {
+                "past": "5h",
+                "ownerId": "5",
+                "body": "reply body 2 for comment 2,reply body 2 for comment 2,reply body 2 for comment 2,reply body 2 for comment 2",
+                "picture": "../../../assets/images/reply4.jpeg",
+                "like": 100,
+                "dislike": 50
               }
             ]
           }
@@ -114,6 +124,7 @@
         "dislike": "2650",
         "comments": [
           {
+            "id": "c1",
             "ownerId": "5",
             "body": "comment body 1 for topic 2",
             "past": "3d",
@@ -122,6 +133,7 @@
             "replies": []
           },
           {
+            "id": "c2",
             "ownerId": "4",
             "body": "comment body 2 for topic 2",
             "past": "6h",
@@ -132,9 +144,73 @@
                 "past": "3h",
                 "ownerId": "3",
                 "body": "reply body 1 for comment 2",
-                "picture": "./images/car.jpeg",
+                "picture": "../../../assets/images/reply1.jpeg",
                 "like": 2250,
                 "dislike": 2250
+              },
+              {
+                "past": "5h",
+                "ownerId": "5",
+                "body": "reply body 2 for comment 2,reply body 2 for comment 2,reply body 2 for comment 2,reply body 2 for comment 2",
+                "picture": "../../../assets/images/reply2.jpg",
+                "like": 100,
+                "dislike": 50
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "title": "I Carry You With Me review – hybrid feature charts a longterm love",
+      "like": 500,
+      "dislike": 5101,
+      "comment": 2300,
+      "date": "20.08.2023",
+      "createTime": "19:55",
+      "ownerId": "2",
+      "details": {
+        "body": "topic 3 details body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit, sed do eiusmod tempor consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consectetu adipisc sit ameth...",
+        "picture": "../../../assets/images/share3.jpeg",
+        "replies": [],
+        "like": "2500",
+        "dislike": "3750",
+        "comments": [
+          {
+            "id": "c1",
+            "ownerId": "1",
+            "body": "comment body 1 for topic 3,comment body 1 for topic 3,comment body 1 for topic 3,comment body 1 for topic 3,comment body 1 for topic 3",
+            "past": "8d",
+            "like": 6000,
+            "dislike": 3500,
+            "replies": [],
+            "picture": "../../../assets/images/comment1.jpg"
+          },
+          {
+            "id": "c2",
+            "ownerId": "3",
+            "body": "comment body 2 for topic3,comment body 2 for topic3,comment body 2 for topic3,comment body 2 for topic3",
+            "past": "6h",
+            "like": 2250,
+            "dislike": 2250,
+            "picture": "../../../assets/images/comment2.jpg",
+            "replies": [
+              {
+                "past": "3h",
+                "ownerId": "6",
+                "body": "reply body 1 for comment 2,reply body 1 for comment 2,reply body 1 for comment 2,reply body 1 for comment 2",
+                "picture": "../../../assets/images/reply3.jpg",
+                "like": 2250,
+                "dislike": 2250
+              },
+              {
+                "past": "5h",
+                "ownerId": "1",
+                "body": "reply body 2 for comment 2,reply body 2 for comment 2,reply body 2 for comment 2,reply body 2 for comment 2",
+                "picture": "../../../assets/images/reply4.jpeg",
+                "like": 100,
+                "dislike": 50
               }
             ]
           }
