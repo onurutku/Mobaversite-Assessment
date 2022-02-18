@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-xxl navbar-light">
   <div class="container-fluid">
     <div class="brand">
-      <a [routerLink]="'/'" class="navbar-brand"
+      <a (click)="reload()" class="navbar-brand"
         ><img src="../../assets/images/Group 368.svg" alt="logo"
       /></a>
     </div>
@@ -15,7 +15,7 @@
           />
         </button>
         <input
-          placeholder="check console.log after submit"
+          placeholder="submit will console.log data"
           type="text"
           id="search"
           [formControlName]="'search'"

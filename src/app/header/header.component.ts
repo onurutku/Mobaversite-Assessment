@@ -32,4 +32,7 @@ export class HeaderComponent implements OnInit {
     //simulate to send it to service to filter and get data
     console.log(search);
   }
+  reload() {
+    window.location.reload();
+  }
 }

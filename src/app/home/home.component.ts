@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { HomeService } from './home.service';
 
 // interface topics {
@@ -44,12 +45,22 @@ export class HomeComponent implements OnInit {
   recentClicked: boolean = false;
   topicsData: any = [{}];
   usersData: any = [{}];
-  constructor(private home: HomeService) {}
+  latestTopicId: string;
+  constructor(private home: HomeService, private router: Router) {}
 
   ngOnInit(): void {
     this.topicsData = this.home.getTopicsData();
-    console.log(this.topicsData);
     this.usersData = this.home.getUsersData();
+    this.topicsData.sort((a, b) => {
+      if (a.date > b.date) {
+        this.latestTopicId = a.id;
+      }
+      if (a.date < b.date) {
+        this.latestTopicId = b.id;
+      }
+      return;
+    });
+    this.router.navigate(['details', this.latestTopicId]);
   }
   popular() {
     this.popularClicked = true;

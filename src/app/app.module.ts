@@ -11,7 +11,6 @@ import { PopUsersComponent } from './home/pop-users/pop-users.component';
 import { TopicDetailComponent } from './home/topic-detail/topic-detail.component';
 import { HomeService } from './home/home.service';
 import { AppRoutingModule } from './app-routing.module';
-import { StartPageComponent } from './home/start-page/start-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { StartPageComponent } from './home/start-page/start-page.component';
     AuthComponent,
     PopUsersComponent,
     TopicDetailComponent,
-    StartPageComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
   providers: [AuthService, HomeService],

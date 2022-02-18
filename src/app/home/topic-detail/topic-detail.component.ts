@@ -20,10 +20,7 @@ export class TopicDetailComponent implements OnInit, OnDestroy {
     this.subs = this.route.params.subscribe((params: Params) => {
       this.topicId = params['id'];
       this.topic = this.home.getTopicsDataById(this.topicId);
-      console.log(this.topic.details.comments[1].replies);
-
       this.topicOwner = this.home.getTopicOwnerById(this.topic.ownerId);
-      console.log(this.topicOwner);
     });
   }
   ngOnDestroy(): void {
@@ -38,6 +35,5 @@ export class TopicDetailComponent implements OnInit, OnDestroy {
     } else {
       this.openReply = null;
     }
-    console.log(id);
   }
 }
